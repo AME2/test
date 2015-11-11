@@ -11,6 +11,7 @@ public:
 
 private:
   double _length;
+  Line (int a) {_length=a;} // Forgot to add a comment to my changes, what a muppet!
 };
 
 // Member functions definitions
@@ -20,19 +21,15 @@ double Line::getLength(void)
   return _length;
 }
 
-void Line::setLength(double len)
-{
-  _length = len;
-}
 
 // Main function for the program
 
 int main()
 {
-  Line line;
+  Line line (6.0);
 
   // set line length
-  line.setLength(6.0);
+  
 
   printf("Length of line: %lf \n", line.getLength());
 
